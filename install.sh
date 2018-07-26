@@ -8,7 +8,7 @@ do
 done
 
 mkdir -p /var/lib/neo4j/conf
-cd /u16all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
+cd /u18all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
 
 echo "================= Adding mysql cnf ==================="
 cd /u16all && cp -rf my.cnf /etc/mysql/my.cnf
@@ -19,7 +19,7 @@ cd /u16all && cp -rf pg_hba.cnf /etc/postgresql/"$POSTGRES_VERSION"/main/pg_hba.
 
 echo "================= Adding shippable_service ==================="
 mkdir -p /usr/local/bin/shippable_services
-cp /u16all/services/* /usr/local/bin/shippable_services
+cp /u18all/services/* /usr/local/bin/shippable_services
 mv /usr/local/bin/shippable_services/shippable_service /usr/local/bin/shippable_service
 
 echo "================= Adding packages for shippable_service =================="
